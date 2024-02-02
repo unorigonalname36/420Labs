@@ -1,0 +1,35 @@
+Basic Case:
+Equivalence Class: A case where i and j are the same.
+Example: algorithm(5, 5)
+
+Small Range:
+Equivalence Class: A small range of integers where j - i is relatively small.
+Example: algorithm(10, 15)
+
+Large Range:
+Equivalence Class: A large range of integers where j - i is relatively large.
+Example: algorithm(1, 1000)
+
+Single Number:
+Equivalence Class: i and j representing a single number.
+Example: algorithm(50, 50)
+
+Even and Odd Numbers:
+Equivalence Class: One or both of i and j being even or odd.
+Examples: algorithm(8, 15) or algorithm(7, 14)
+
+Negative Numbers:
+Equivalence Class: Negative values for i and j.
+Example: algorithm(-10, -5)
+
+Zero:
+Equivalence Class: i and j being zero.
+Example: algorithm(0, 0)
+
+Mixed Signs:
+Equivalence Class: i and j having different signs.
+Example: algorithm(-5, 5)
+
+Edge Cases:
+Equivalence Class: Special cases that may involve the boundaries of the input space.
+Examples: algorithm(Integer.MAX_VALUE - 1, Integer.MAX_VALUE) or algorithm(Integer.MIN_VALUE, Integer.MIN_VALUE + 1)
