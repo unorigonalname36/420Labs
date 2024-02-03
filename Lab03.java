@@ -17,22 +17,27 @@ public class Lab03{
     public static int algorithm(int i, int j){
         int x = 0;
         int y = 0;
+        if(i<0||j<0){
+            System.out.println("Error, negative inputs are not allowed");
+            return 0;
+        }
         System.out.print(i + " ");
         System.out.print(j + " ");
+        y= cycleCount(i);
         while (i!=j){
-        x = cycleCount(i);
+       
+            x = cycleCount(i);
         if (x>y){
             y=x;
         }
         i+=1;
         }
 
-
         System.out.println(y+1);
-        return 0;
+        return y+1;
     }
     public static void main(String[] args) {
-        algorithm(900, 1000);
+        algorithm(1, 10);
 
     }
 }
